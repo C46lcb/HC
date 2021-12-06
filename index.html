@@ -50,6 +50,12 @@
   </head>
   <body>
     <script>
+       var newdate=new Date();
+        var day=newdate.getDate();
+        var month=newdate.getMonth();
+        var year=newdate.getFullYear();
+        var dateword=year+'年'+month+'月'+day+'日';
+        document.getElementById("d").innerHTML=dateword;
       function ss()
       {
         var a=document.getElementById("ss").value;
@@ -60,14 +66,13 @@
         input{
     outline-style: none ;
     border: 1px solid #ccc; 
-    border-radius: 3px;
+    border-radius: 10px;
             }
       </style>
     </script>
       <div id="header">
         <nav>
           <ul>
-            <div align="left">
             <li class="fork">
               <a href="index.html">首页</a>
               <a href="about.html">关于</a>
@@ -76,14 +81,10 @@
               <a href="javascript.html">Javascript</a>
               <a href="python.html">python</a>
               <a href="fx.html">分享</a>
-            </li>
-            </div>
-            <div align="right">
-            <li class="fork">
+              <p>输入内容搜索</p>
               <input type="input" id="ss"/>
               <a href="javscript:ss()">搜索</a>
             </li>
-            </div>
           </ul>
         </nav>
       </div><!-- end header -->
@@ -96,7 +97,7 @@
           <p></p>
           <hr>
         </div>
-        <h1>文章</h1>
+        <h2 id="d"></h2>
       </section>
 
     </div>
