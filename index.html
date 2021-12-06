@@ -49,9 +49,25 @@
 
   </head>
   <body>
+    <script>
+      function ss()
+      {
+        var a=document.getElementById("ss").value;
+        var b="c46lcb.github.io/HC"+a+".html";
+        window.location.href=b;
+      }
+      <style type="text/css">
+        input{
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+            }
+      </style>
+    </script>
       <div id="header">
         <nav>
           <ul>
+            <div align="left">
             <li class="fork">
               <a href="index.html">首页</a>
               <a href="about.html">关于</a>
@@ -61,7 +77,13 @@
               <a href="python.html">python</a>
               <a href="fx.html">分享</a>
             </li>
-            
+            </div>
+            <div align="right">
+            <li class="fork">
+              <input type="input" id="ss"/>
+              <a href="javscript:ss()">搜索</a>
+            </li>
+            </div>
           </ul>
         </nav>
       </div><!-- end header -->
@@ -74,7 +96,7 @@
           <p></p>
           <hr>
         </div>
-        <h1>正在维护</h1>
+        <h1>文章</h1>
       </section>
 
     </div>
