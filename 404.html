@@ -49,6 +49,10 @@
 
   </head>
   <body>
+    <script>
+      var test = window.location.href;
+      document.getElementById("wh").innerHTML='没找到: '+test;
+    </script>
       <div id="header">
         <nav>
           <ul>
@@ -75,6 +79,7 @@
           <hr>
         </div>
         <h1>抱歉,HC没找到你要的页面</h1>
+        <p id="wh"></p>
         <li class="fork">
               <a href="javascript:window.history.back();">返回</a>
         </li>
